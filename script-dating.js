@@ -360,8 +360,10 @@ function displayResults(personality) {
 
 // Profiles
 var profile_one = document.querySelector(".two");
+var profile_three = document.querySelector(".three");
 
 profile_one.addEventListener("click", message);
+profile_three.addEventListener("click", message);
 // profile_one.removeEventListener("click", message);
 
 function message(){

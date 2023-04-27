@@ -359,13 +359,13 @@ function displayResults(personality) {
 }
 
 // Profiles
-var profile_one = document.querySelector(".one");
+var profile_one = document.querySelector(".two");
 
 profile_one.addEventListener("click", message);
 // profile_one.removeEventListener("click", message);
 
 function message(){
-	console.log("you'll die alone");
+	fail.innerHTML = '<div class="failbox"> You chose the wrong person! You are the worst matchmaker and this is why you are single, you will die alone. </div> '
 }
 
 const heart = document.querySelector(".heart-like-button");
@@ -374,6 +374,7 @@ var fail = document.querySelector(".fail");
 heart.addEventListener("click", () => {
   if (heart.classList.contains("liked")) {
     heart.classList.remove("liked");
+	console.log("check");
   } else {
     heart.classList.add("liked");
   }

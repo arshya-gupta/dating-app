@@ -248,17 +248,6 @@ function setResultPage() {
 
 }
 
-function preload() {
-	json = loadJSON('haiku.json');
-};
-
-//Might have to remove later
-function setup() {
-	grammar = RiTa.grammar(json);
-	result = grammar.expand();
-	printLines.innerText = result;
-	noCanvas();
-};
 
 function displayResults(personality) {
 	switch (personality) {
